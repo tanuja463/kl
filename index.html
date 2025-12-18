@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            gap: 40px;
+            background-color:rgb(240, 241, 241);
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: white;
+            color:rgb(23, 24, 24);
+            padding:80px;
+            font-size: 17px;
+            text-align: baseline;
+        }
+        body {
+            margin:0px;
+            padding:0px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: linear-gradient(to right,#834200,#B5651D);
+            justify-content: center;
+            justify-items: center;
+
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            color:blue;
+        }
+        .image {
+            width:250px;
+            background: #101010;
+            color:aliceblue;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgb(157, 163, 165);
+        }
+        /* Large laptops (below 1200px) */
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .image {
+        width: 100%;
+    }
+}
+
+/* Tablets (below 768px) */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .grid-item {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .image {
+        margin: 0 auto;
+    }
+}
+
+/* Mobile phones (below 480px) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .grid-item {
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+    </style>
+</head>
+<body>
+  <h2>Famous places In India</h2>
+  <div class="grid-container">
+    <div class="grid-item">
+        <div class="image">
+            <img src="rajasthan.jpg" alt="">
+        </div>
+        <div class="image-info">
+            <h4>Rajasthan</h4>
+            <p>Rajasthan, the land of royals, offers a vibrant tapestry of culture, history, and natural beauty</p>
+        </div>
+    </div>
+    <div class="grid-item">
+         <div class="image">
+            <img src="ladakh.jpg" alt="">
+        </div>
+        <div class="image-info">
+            <h4>Ladakh</h4>
+            <p>Ladakh, the land of high passes, is a stunning region known for its breathtaking landscape.</p>
+        </div>
+    </div>
+    <div class="grid-item">
+         <div class="image">
+            <img src="tajmahal.jpg" alt="">
+        </div>
+        <div class="image-info">
+            <h4>Taj Mahal</h4>
+            <p>The Taj Mahal is built of white marble that reflects hues according to the intensity of the sunlight or the moonlight. </p>
+        </div>
+    </div>
+    <div class="grid-item">
+         <div class="image">
+            <img src="jaipur.jpg" alt="">
+        </div>
+        <div class="image-info">
+            <h4>Jaipur</h4>
+            <p>Jaipur is a major hub for arts and crafts. It has many traditional shops selling antiques, jewellery.</p>
+        </div>
+    </div>
+    <div class="grid-item">
+         <div class="image">
+            <img src="goa.jpg" alt="">
+        </div>
+        <div class="image-info">
+            <h4>Goa</h4>
+            <p>Golden beaches and rich culture, Goa is a lively coastal state in India.</p>
+        </div>
+    </div>
+    <div class="grid-item">
+         <div class="image">
+            <img src="shimla.jpg" alt="">
+        </div>
+        <div class="image-info">
+            <h4>Shimla</h4>
+            <p>Shimla is home to many temples and holy shrines. </p>
+        </div>
+    </div>
+    <div class="grid-item">
+         <div class="image">
+            <img src="jaisalmer.jpg" alt="">
+        </div>
+        <div class="image-info">
+            <h4>Jaisalmer</h4>
+            <p>Jaisalmer is also known for its leather messenger bags, made from wild camels native to the area.</p>
+        </div>
+    </div>
+    <div class="grid-item">
+         <div class="image">
+            <img src="udaipur.jpg" alt="">
+        </div>
+        <div class="image-info">
+            <h4>Udaipur</h4>
+            <p>Udaipur, known as the "Lake City," is famous for its beautiful lakes</p>
+        </div>
+    </div>
+    <div class="grid-item">
+         <div class="image">
+            <img src="varanasi.jpg" alt="">
+        </div>
+        <div class="image-info">
+            <h4>Varanasi</h4>
+            <p>Varanasi, also known as Kashi or Banaras, is one of the oldest living cities in the world</p>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
